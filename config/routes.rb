@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :portfolios, except: [:show]
+  get 'angular-items', to: 'portfolios#angular'
   get 'protfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
 
   # able to create the name you love
