@@ -51,3 +51,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #0428
 gem 'friendly_id', '~> 5.1.0'
+# for using beautify Ruby
+gem 'htmlbeautifier', '~> 1.1', '>= 1.1.1'
