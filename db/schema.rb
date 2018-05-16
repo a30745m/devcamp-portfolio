@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180507124059) do
+ActiveRecord::Schema.define(version: 20180514134523) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,10 +22,11 @@ ActiveRecord::Schema.define(version: 20180507124059) do
     t.datetime "updated_at", null: false
     t.string "slug"
     t.integer "status", default: 0
-    t.bigint "topic_id"
+    t.integer "topic_id"
     t.index ["slug"], name: "index_blogs_on_slug", unique: true
     t.index ["topic_id"], name: "index_blogs_on_topic_id"
   end
+
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
