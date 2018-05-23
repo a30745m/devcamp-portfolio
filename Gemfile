@@ -56,3 +56,6 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'htmlbeautifier', '~> 1.1', '>= 1.1.1'
 
 gem 'devise', '~> 4.4', '>= 4.4.3'
+# bootstrap
+gem 'bootstrap', '~> 4.1.0'
+gem 'jquery-rails'
