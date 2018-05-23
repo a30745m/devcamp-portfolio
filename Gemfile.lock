@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/a30745m/movarousal_view_tool
-  revision: 6fe940a8f30fe76eb5c8f74af7d7dbcaebc293ea
-  specs:
-    movarousal_view_tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -101,6 +95,7 @@ GEM
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
+    movarousal_view_tool (0.1.0)
     multi_json (1.13.1)
     nio4r (2.3.0)
     nokogiri (1.8.2)
@@ -206,7 +201,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
-  movarousal_view_tool!
+  movarousal_view_tool (~> 0.1.0)
   pg (>= 0.18, < 2.0)
   pry-byebug
   puma (~> 3.7)
