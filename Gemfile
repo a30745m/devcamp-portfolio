@@ -59,3 +59,4 @@ gem 'devise', '~> 4.4', '>= 4.4.3'
 # bootstrap
 gem 'bootstrap', '~> 4.1.0'
 gem 'jquery-rails'
+gem 'movarousal_view_tool', git: 'https://github.com/a30745m/movarousal_view_tool'
