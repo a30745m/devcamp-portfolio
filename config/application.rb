@@ -20,6 +20,7 @@ Bundler.require(*Rails.groups)
 module DevcampPortfolio
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+    config.eager_load_paths << "#{Rails.root}/lib"
     config.load_defaults 5.1
     #0502 added time_zone but not sure it work or not?
     config.time_zone = "Taipei"
