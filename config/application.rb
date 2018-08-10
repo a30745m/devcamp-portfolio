@@ -20,6 +20,7 @@ Bundler.require(*Rails.groups)
 module DevcampPortfolio
   class Application < Rails::Application
     config.assets.initialize_on_precompile = false
+    config.secret_key_base = ENV["SECRET_KEY_BASE"]
     # Initialize configuration defaults for originally generated Rails version.
     config.eager_load_paths << "#{Rails.root}/lib"
     config.load_defaults 5.1
