@@ -5,7 +5,12 @@
   <nav class="breadcrumb row">
     <div class='col'>
     <%= link_to "Home", root_path, class: 'breadcrumb-item' %>
-    <%= link_to @blog.topic.title, topic_path(@blog.topic), class: 'breadcrumb-item' %>
+
+    <!-- avoid showing the blog without chosing topic -->
+    <% if @blog.topic != nil %>
+      <%= link_to @blog.topic.title, topic_path(@blog.topic), class: 'breadcrumb-item' %>
+    <% end %>
+    <!-- end -->
  
     <span class="breadcrumb-item active"><%= @blog.title %></span>
  
