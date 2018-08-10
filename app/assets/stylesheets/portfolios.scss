@@ -2,8 +2,22 @@
 @import "jquery-ui";
 @import "gritter";
 
+@font-face {
+  font-family: 'Lato';
+  src:font-url('Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src:font-url('RobotoSlab-Regular.ttf');
+}
+
 :root {
   --jumbotron-padding-y: 3rem;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
 }
 
 .jumbotron {
@@ -45,4 +59,17 @@ footer p {
 /* Custom style */
 .portfolio_container {
   padding-top: 30px
+}
+
+.card > img {
+  height: 200px
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', serif;
 }
