@@ -4,7 +4,9 @@ ready = ->
       'We are TC Boyz'
       "It's party time!"
     ]
-    typeSpeed: 100
+    typeSpeed: 40
+    backSpeed: 40
+    loop: true
   return
 
 $(document).ready ready
